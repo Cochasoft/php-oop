@@ -28,12 +28,16 @@ class Circulo extends FiguraGeometrica
 
 }
 $circulo = new Circulo(5);
-print $circulo->calcularArea()."<br>";
-print $circulo->calcularPerimetro()."<br>";
-//echo pow(3,2);
+print "El AREA del circulo: ".$circulo->calcularArea()."<br>";
+print "El PERIMETRO es: ".$circulo->calcularPerimetro()."<br>";
 
 echo "hola circulo";
 
-
-
 ?>
+<html>
+<ul>
+<li>
+        <a href="FiguraGeometrica.php">Inicio</a>
+    </li>
+</ul>
+</html>
