@@ -21,9 +21,6 @@ class FiguraGeometrica
 
 }
 $figuraGeometrica = new FiguraGeometrica();
-//$figuraGeometrica ->calcularArea(5,2)."<br>";
-//echo"hola mundo";
-
 ?>
 <html>
 <body>
@@ -42,5 +39,6 @@ $figuraGeometrica = new FiguraGeometrica();
         <a href="Rectangulo.php">Rectangulo</a>
     </li>
 </ul>
+
 </body>
 </html>
