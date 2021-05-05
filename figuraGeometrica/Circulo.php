@@ -28,10 +28,12 @@ class Circulo extends FiguraGeometrica
 
 }
 $circulo = new Circulo(5);
+print "Radio del Circulo es: ".$circulo->getRadio()."<br>";
+print "CALCULADO<BR>";
 print "El AREA del circulo: ".$circulo->calcularArea()."<br>";
-print "El PERIMETRO es: ".$circulo->calcularPerimetro()."<br>";
 
-echo "hola circulo";
+print "El PERIMETRO del Circulo es: ".$circulo->calcularPerimetro()."<br>";
+
 
 ?>
 <html>
