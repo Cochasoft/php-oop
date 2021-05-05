@@ -41,10 +41,12 @@ class Rectangulo extends FiguraGeometrica
 
 }
 $rectangulo= new Rectangulo(10,20);
-
+print "El Alto es: ".$rectangulo->getAlto()."<br>"; 
+print "El Ancho es: ".$rectangulo->getAncho()."<br>";
+print "CALCULADO<BR>";
 print "El AREA del Rectangulo es: ".$rectangulo ->calcularArea()."<br>";
-print "El PERIMETRO es: ".$rectangulo->calcularPerimetro()."<br>";
-echo "hola Rectangulo"
+
+print "El PERIMETRO del Resctangulo es: ".$rectangulo->calcularPerimetro()."<br>";
 
 ?>
 <html>
