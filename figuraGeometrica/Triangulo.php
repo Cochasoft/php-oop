@@ -52,11 +52,13 @@ class Triangulo extends FiguraGeometrica
 
 
 }
-$triangulo = new Triangulo(10,20,30);
+$triangulo = new Triangulo(1,2,3);
 
+print  "La Base es: ".$triangulo->getBase()."<br>";
+print "La ALtura es: ".$triangulo->getAltura()."<br>";
+print "CALCULADO<br>";
 print "El AREA del Triangulo es: ". $triangulo ->calcularArea()."<br>";
 print "El PERIMETRO es: ". $triangulo->calcularPerimetro()."<br>";
-
 
 ?>
 <html>
