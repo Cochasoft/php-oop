@@ -42,8 +42,15 @@ class Rectangulo extends FiguraGeometrica
 }
 $rectangulo= new Rectangulo(10,20);
 
-print $rectangulo ->calcularArea()."<br>";
-print $rectangulo->calcularPerimetro()."<br>";
+print "El AREA del Rectangulo es: ".$rectangulo ->calcularArea()."<br>";
+print "El PERIMETRO es: ".$rectangulo->calcularPerimetro()."<br>";
 echo "hola Rectangulo"
 
 ?>
+<html>
+<ul>
+<li>
+        <a href="FiguraGeometrica.php">Inicio</a>
+    </li>
+</ul>
+</html>
