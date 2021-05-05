@@ -54,11 +54,15 @@ class Triangulo extends FiguraGeometrica
 }
 $triangulo = new Triangulo(10,20,30);
 
-print $triangulo ->calcularArea()."<br>";
+print "El AREA del Triangulo es: ". $triangulo ->calcularArea()."<br>";
+print "El PERIMETRO es: ". $triangulo->calcularPerimetro()."<br>";
 
-
-print $triangulo->calcularPerimetro();
-
-echo "hola"
 
 ?>
+<html>
+<ul>
+<li>
+        <a href="FiguraGeometrica.php">Inicio</a>
+    </li>
+</ul>
+</html>
