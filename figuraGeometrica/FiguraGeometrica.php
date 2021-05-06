@@ -24,7 +24,7 @@ $figuraGeometrica = new FiguraGeometrica();
 ?>
 <html>
 <body>
- <h>CochaSoft</h1>
+ <h1>CochaSoft</h1>
 <ul>
     <li>
         <a href="FiguraGeometrica.php">Inicio</a>
