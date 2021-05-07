@@ -1,5 +1,6 @@
 <?php
 require 'FiguraGeometrica.php';
+//use \FiguraGeometrica;
 
 class Triangulo extends FiguraGeometrica
 {
@@ -14,54 +15,78 @@ class Triangulo extends FiguraGeometrica
        $this->lado=$l;
    }
 
-   function getBase() {
+   function getBase()
+   {
       return $this->base;
    }
-
-   function setBase($b) {
+   function setBase($b)
+   {
       $this-> base=$b;
    }
-
-   function getAltura() {
+   function getAltura()
+   {
       return $this->altura;
    }
-
-   function setAltura($a) {
+   function setAltura($a)
+   {
       $this->altura = $a;
    }
-
-   function calcularArea() {
+   function calcularArea()
+   {
       return ($this->base*$this->altura)/2;
    }
-
-   function getLado() {
+   function getLado()
+   {
       return $this->lado;
    }
-
-   function setLado($l) {
+   function setLado($l)
+   {
       $this->lado = $l;
    }
 
-   // Es para triangulo equilatero.
+   //es para triangulo equilatero.
    function calcularPerimetro()
    {
-      return 3 * $this->lado;
+      return 3*$this->lado;
    }
 
 
 }
-$triangulo = new Triangulo(1,2,3);
 
-print "La Base es: ".$triangulo->getBase()."<br>";
-print "La Altura es: ".$triangulo->getAltura()."<br>";
+
+if(isset($_POST["base"])|| isset($_POST["altura"]) || isset($_POST["lado"]))
+{
+   $ba = $_POST["base"];
+   $al = $_POST["altura"];
+   $la = $_POST["lado"];
+   $triangulo = new Triangulo($ba,$al,$la);
+   
+}else
+{
+   $triangulo = new Triangulo(10,10,3);
+   
+}
+print  "La Base es: ".$triangulo->getBase()."<br>";
+print "La ALtura es: ".$triangulo->getAltura()."<br>";
 print "CALCULADO<br>";
 print "El AREA del Triangulo es: ". $triangulo ->calcularArea()."<br>";
 print "El PERIMETRO es: ". $triangulo->calcularPerimetro()."<br>";
 
+if($_POST["base"]){
+   var_dump($_POST["base"]);
+   }
 ?>
 <html>
+<body>
+<form name="formulario" method="POST" action="Triangulo.php">
+   Base: <input type="text" name="base"> <br>
+   Altura: <input type="text" name="altura"> <br>
+   lado: <input type="text" name="lado"> <br>
+    <input value="calcular" type="submit">
+</form>
+</body>
 <ul>
-    <li>
+<li>
         <a href="FiguraGeometrica.php">Inicio</a>
     </li>
 </ul>

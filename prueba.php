@@ -6,6 +6,7 @@ class Auto
   public $numeroPuerta;
   public $color;
   public $modelo;
+  private $placa;
 
    function __construct($nP, $c, $m)
    {
