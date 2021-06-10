@@ -3,12 +3,12 @@
 include 'conexion.php';
 
 if(isset($_POST['enviar'])){
-    if(empty($_POST['producto'])){
+    if(!empty($_POST['producto'])){
       $valor =$_POST['producto'];
       $valor1 =$_POST['cantidadCompra'];
       $valor2 =$_POST['precioCompra'];
       $valor3 =$_POST['fecha'];
-  //echo $valor;
+  //var_dump($valor);
       $json = array('id'=>$valor, 'cantidadxcompra'=>$valor1, 'precioxcompra'=>$valor2, 'fecha'=>$valor3);
   //var_dump(json_encode($json));	
       $jsonCompra = json_encode($json);
@@ -18,6 +18,7 @@ if(isset($_POST['enviar'])){
       echo "esta vacio el formulario";
     }
   }
-
-
+  echo "Cargandoo.....";
+ header( "refresh:2;url=reporteCompra.php" ); 
+ 
 ?>
