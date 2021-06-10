@@ -9,7 +9,7 @@ $res = mostrarProducto($sql);
 <html>
 
 <body>
-  <form action="funcion.php" method="post" align="left"  border-style='solid'>
+  <form action="funcion.php" method="post" align="left">
     <h2>Compra producto</h2>
     Seleccionar: <select name="producto">
       <option value="0">Productos:</option>
@@ -23,14 +23,15 @@ $res = mostrarProducto($sql);
     precio compra: <input type="number" name="precioCompra"><br></br>
     fecha registro: <input type="date" name="fecha"><br></br>
     <!-- nota : <input type="text" name="notaCompra"><br></br> -->
-    <button name="enviar" type="submit">Regsitrar Compra</button><br></br>
+    <!-- onclick="alert('se registro correcto!')" -->
+    <button  name="enviar" type="submit">Regsitrar Compra</button><br></br>
   </form>
 
   <table>
     <th>
     </th>
   </table>
-  <button onclick="alert('Hello World!')"><a href="http://stock.com/index.php?">Nuevo producto </a><br/></button>
+  <button ><a href="http://stock.com/index.php?">Nuevo producto </a><br/></button>
   <button><a href="http://stock.com/reporteCompra.php">Reporte de Producto</a></button>
 </body>
 
