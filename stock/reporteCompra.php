@@ -14,14 +14,14 @@ $reporte="SELECT p.nombre, cp.precio_compra, cp.cantidadxcompra, cp.fecha, cp.no
 <body>
 <form action="reporteCompra.php" method="post">
 <table border="5">
-  <h2>registro de Compra</h2>
+  <h2>Reporte de Compra</h2>
  <thead>
   <tr>
    <td>Nombre</td>
    <td>Cantidad</td>
    <td>Precio Compra</td>
    <td>Fecha Registro</td>
-   <td>nota</td>
+   <td>Detalle Compra</td>
   </tr>
  </thead>
   <tbody>
@@ -39,10 +39,10 @@ $reporte="SELECT p.nombre, cp.precio_compra, cp.cantidadxcompra, cp.fecha, cp.no
     <td><?php echo $a['cantidadxcompra']?></td>
     <td><?php echo $a['precio_compra']  ?></td>
     <td><?php echo $a['fecha'] ?></td>
-    <td>se realizola compra de <?php 
-      echo $a['nota']/* $a['nota'] */ 
-          
-    ?></td>
+    <td>Se compra <?php 
+      echo $a['nombre']?>, a: <?php 
+      echo $a['precio_compra']?>Bs, cantidad: <?php 
+      echo $a['cantidadxcompra']?>  </td>
     <?php }?>
   </tr>
  </tbody>

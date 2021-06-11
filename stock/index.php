@@ -11,7 +11,7 @@
 							<ul>
 								<li><a href="http://stock.com/registroProducto.php">Registro Producto</a></li>
 								<li><a href="http://stock.com/reporteGeneral.php">kardex</a></li>
-								<li><a href="http://stock.com/compraProducto.php">compra</a></li>
+								<li><a href="http://stock.com/compraProducto.php">Registro Compra</a></li>
 								<li><a href="http://stock.com/registroInventario.php">Registro Inventario</a>
 							</ul>
 						</li>
